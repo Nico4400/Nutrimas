@@ -40,7 +40,7 @@ header img{
 
 /* inicio etiqueta produtcos */
 .et_productos{
-    height: 45vh;
+    
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -67,7 +67,7 @@ header img{
 
 /* iniciode pedido*/
 .pedido{
-    height: 50vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,8 +83,8 @@ header img{
 
 /* inicio de envios */
 .envios{
-    height: 25vh;
-    width: 60%;
+    /* height: 25vh;
+    width: 60%; */
     margin: auto;
     display: flex;
     align-items: center;
