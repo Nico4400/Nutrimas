@@ -4,130 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arma tu Pedido</title>
+    <title>Nutrimas</title>
+    <!-- Linkeamos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Linkeamos favicon -->
     <link rel="shortcut icon" href="../media/logo_nutrimas.png" type="image/x-icon">
-    <!-- linkeamos nuestro scc -->
+    <!-- linkeamos nuestro css -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <!-- inicio encabezado -->
+    <!-- inicio navbar -->
     <header>
-        <!-- inicio de nav -->
-        <nav>
-            <!-- inicio de lista -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./caneviandas.html"><!-- <img src="./media/foto_caneviandas.jpg" alt="Foto Caneviandas"> -->Caneviandas</a></li>
-                <li><img src="../media/logo_nutrimas.png" alt="logo_nutrimas"></li>
-                <li><a href="./feliviandas.html"><!-- <img src="./media/foto_feliviandas.jpg" alt="Foto Feliviandas"> -->Feliviandas</a></li>
-                <li><a href="#">Arma tu pedido</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <!-- fin de lista -->
+        <!-- inicio de nav -->          
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../media/logo_nutrimas.png" alt="logo_nutrimas"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../media/logo_nutrimas.png" alt="logo_nutrimas"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../pages/caneviandas.html"><img src="../media/foto_caneviandas.jpg" alt="Foto Caneviandas">Caneviandas</a></li>
+                                  <li><a class="dropdown-item" href="../pages/feliviandas.html"><img src="../media/foto_feliviandas.jpg" alt="Foto Feliviandas">Feliviandas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="../pages/arma_tu_pedido.html">Arma tu Pedido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
         </nav>
         <!-- fin de nav -->
     </header>
-    <!-- fin de encabezado -->
+    <!-- fin de navbar -->
 
     <!-- inicio de main -->
     <main>
-        <!-- inicio de seccion -->
-        <section class="carrusel">
-            <!-- inicio de article -->
-            <article>            
-                <img src="../media/foto_01.png" alt="Foto carrusel_1">
-                <img src="../media/exijo_barf.png" alt="Foto carrusel_2">
-                <img src="../media/foto_barf.jpg" alt="Foto carrusel_3">
-            </article>
-            <!-- fin de article -->
+        <!-- inicio de seccion carousel -->
+        <section>            
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../media/foto_01.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../media/exijo_barf.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../media/imagenes-facebook-portada.png" alt="Third slide">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
         </section>
         <!-- fin de seccion -->
-
         
-        
-        <!-- inicio de seccion -->
+        <!-- inicio de pedido -->
         <section>
-            <h2>Queres armar tu pedido ?</h2>
-            <!-- inicio de article -->
-            <article class="pedido">
-                <div>
-                    <img src="" alt="Foto Producto">            
-                    <h5>Caneviandas</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias modi adipisci consectetur eum.</p>
-                    <a href="">Ver Mas</a>
-                </div>
-            
-                <div>
-                    <img src="" alt="Foto Producto">            
-                    <h5>Feliviandas</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias modi adipisci consectetur eum.</p>
-                    <a href="">Ver Mas</a>
-                </div>
+            <h2 class="row container-fluid pedido--titulo">arma tu pedido</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4 pedido">
+                    <div class="col col-md-6 col-lg-4">
+                        <div class="card h-100" style="width: 19rem;">
+                            <img src="../media/IMG-20171204-WA0002.jpg" class="card-img-top" alt="Foto Producto">  
+                            <div class="card-body">          
+                                <h5 class="card-title">Caneviandas</h5>
+                                <p class="card-text">Frescas, caseras y con ingredientes naturales, brindando una opción de alimentación húmeda y nutritiva.</p>
+                                <a href="" class="btn btn-primary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col col-md-6 col-lg-4">
+                        <div class="card h-100" style="width: 19rem;">
+                            <img src="../media/IMG-20171204-WA0004.jpg" class="card-img-top" alt="Foto Producto"> 
+                            <div class="card-body">             
+                                <h5 class="card-title">Feliviandas</h5>
+                                <p class="card-text">Basada en carne cruda, vísceras, huesos y vegetales, promoviendo su salud y bienestar.</p>
+                                <a href="" class="btn btn-primary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div>
-                    <img src="" alt="Foto Producto">            
-                    <h5>Especiales</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias modi adipisci consectetur eum.</p>
-                    <a href="">Ver Mas</a>
+                    <div class="col col-md-6 col-lg-4">
+                        <div class="card h-100" style="width: 19rem;">
+                            <img src="../media/IMG-20171204-WA0005.jpg" class="card-img-top" alt="Foto Producto">  
+                            <div class="card-body">            
+                                <h5 class="card-title">Caldo de Hueso</h5>
+                                <p class="card-text">Nutritivo, rico en minerales y colágeno, beneficia las articulaciones, la piel y el sistema digestivo.</p>
+                                <a href="" class="btn btn-primary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <!-- fin de article -->            
+            </div>            
         </section>
-        <!-- fin de seccion -->
+        <!-- fin de pedido -->
 
-        <!-- inicio de seccion -->
-        <section class="envios">
-            <img src="../media/entrega-de-comida.png" alt="Camion de envios">
-            <!-- inicio de article -->
-            <article>            
-                <h4>ENVIOS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias modi adipisci consectetur eum quam perspiciatis officia, corrupti dignissimos sequi at, aspernatur obcaecati iure cum molestiae harum recusandae! Voluptatibus, qui.</p>
-            </article>
-            <!-- fin de article -->
+        <!-- inicio de envios -->
+        <section>
+            <div class="container-fluid">
+                <div class="row envios">
+                    <div class="col-sm-3 col-md-2 envios__img">
+                        <img src="../media/entrega-de-comida.png" alt="Camion de envios">
+                    </div>
+                        <!-- inicio de article -->
+                    <div class="col-9 col-sm-8 col-lg-6">
+                        <article>            
+                            <h4>ENVIOS</h4>
+                            <p>Hacé tu pedido las 24 hs ¡Entragas los días martes y jueves! (Enviós para CABA y GBA) excepto Pilar, La Matanza, Gral Rodriguez, Cañuelas.</p>
+                        </article>
+                        <!-- fin de article -->
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- fin de seccion -->
+        <!-- fin de envios -->
     </main>
     <!-- fin de main -->
 
     <!-- inicio de footer -->
-    <footer class="fondo">
-        <!-- logo -->
-        <img src="../media/logo_nutrimas.png" alt="Logo Nutrimas">
-        <!-- fin logo -->
+    <footer>
         <!-- inicio de fondo -->
-        <ul class="info">
-            <nav>
-                <ul class="navegacion">Navegacion
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html#productos">Productos</a></li>
-                <li><a href="./pages/.html">Preparacion</a></li>
-                <li><a href="./pages/.html">Recetas Especiales</a></li>
-                <li><a href="./pages/.html">Preguntas Frecuentes</a></li>
-                </ul>
-            </nav>
-            <ul>
-                <ul>Contactos
-                    <li><a href="https://api.whatsapp.com/send?phone=5492215422161"> Telefono: +54 9 221 542-2161</a></li>
-                    <li>Mail: nutrimas@gmail.com</li>
-                </ul>
-                <ul>Novedades
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit</p>
-                    <form action="#">
-                        <input type="text" placeholder="Email">
-                        <input type="submit" value="Enviar">
-                    </form>                    
-                </ul>
-            </ul>
-            <ul>Redes Sociales
-                <li><a href="https://www.instagram.com/caneviandasbarf/?hl=es&__coig_restricted=1">Instagram</a></li>
-                <li><a href="https://www.facebook.com/1791435711141234/posts/seguinos-en-instagram-nombre-de-usuario-caneviandasbarfhttpswwwinstagramcomcanev/2906678169616977/">facebook</a></li>
-            </ul>
-        </ul>
-        <!-- fin de fondo -->
+        <div class="container-fluid">
+            <div class="row fondo">
+                <!-- logo -->
+                <div class="col-12 col-md-2 fondo__img">
+                    <img src="../media/logo_nutrimas.png" alt="Logo Nutrimas">
+                </div>
+                <!-- fin logo -->                
+                <div class="col-md-3">                    
+                    <nav>
+                        <ul class="navegacion">Navegacion
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#productos">Preparacion</a></li>
+                            <li><a href="#productos">Recetas Especiales</a></li>
+                            <li><a href="./pages/.html">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-">
+                            <ul>Contactos
+                                <li><a href="https://api.whatsapp.com/send?phone=5492215422161"> Telefono: +54 9 221 542-2161</a></li>
+                                <li>Mail: nutrimas@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-">
+                            <ul>Novedades
+                                <p>Si quieres saber mas de nosotros puedes suscribirte a nuestras novedades ingresando tu mail aquí debajo</p>
+                                <form action="#">
+                                    <input type="text" placeholder="Email">
+                                    <input type="submit" value="Enviar">
+                                </form>                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul>Redes Sociales
+                        <li><a href="https://www.instagram.com/caneviandasbarf/?hl=es&__coig_restricted=1">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/1791435711141234/posts/seguinos-en-instagram-nombre-de-usuario-caneviandasbarfhttpswwwinstagramcomcanev/2906678169616977/">facebook</a></li>
+                    </ul>
+                </div>                                   
+            </div>
+        </div>        
     </footer>
     <!-- fin de footer -->
+    
+    <!-- link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
