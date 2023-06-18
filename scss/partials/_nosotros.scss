@@ -1,0 +1,89 @@
+/* inicio de quienes somos */
+.somos{
+    padding: 2% 0 2% 0;
+    width: 99%;
+    margin: auto;
+    text-justify: inter-word;
+    text-align: justify;
+
+    p{
+        text-indent: 5%;
+    }
+}
+/* fin de quienes somos */
+
+
+/* inicio de valores */
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+
+    p{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        text-indent: 5%;
+    }
+
+    h2{
+        margin: auto;
+        width: 90%;
+    }
+
+    img{    
+        border-radius: 15%;
+        padding: 0 5% 0 5%;
+        rotate: 1.5deg; 
+        transition: 1s; 
+        
+        &:hover{
+            rotate: -1.5deg;
+            transition: 1s;
+        }
+    }
+}
+/* fin de valores */
+
+/* inicio de integrantes */
+
+.integrantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--titulo{
+        margin: 0;
+        padding: 2% 0 2% 5%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__text{
+            color: rgba(0, 0, 0, 0);
+            padding: 0% 5% 0% 5%;   
+            position: absolute;
+            bottom: 20%;
+            left: 0%;
+            display: flex;
+            text-indent: 20%;
+            text-align: justify;
+            text-justify: inter-word;
+
+            &:hover{    
+                color: white;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+}
+/* fin de integrantes */

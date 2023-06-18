@@ -1,0 +1,43 @@
+/* inicio de nav  */
+header{
+    height: 14vh;  
+    
+
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;    
+        align-items: center; 
+    }
+
+    img{
+        height: 14vh;
+        width: 14vh;
+        border-radius:100%;
+        align-items: center;
+
+    }
+    
+}
+/* fin de nav */
+
+.icono{
+    background-color: rgba(29, 7, 7, 0.6);
+    padding: 15%;
+    border-radius: 100%;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        transition: 0.4s;      
+    }
+
+}
+
+/* inicio carrusel */
+/* .carousel-inner {
+    height: 70vh;
+    width: 85%;    
+    margin: auto;
+    } */
+/* fin carrusel */

@@ -1,0 +1,20 @@
+/* inicio foter */
+.fondo{
+    background-color: aqua;
+    list-style: none;
+
+    img{
+        height: 15vh;
+        width: 15vh;
+        border-radius:100%;
+    }
+    li{
+        list-style: none;  
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+}
+/* fin footer */
