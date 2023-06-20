@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+/* fondo de pantalla */
+body{
+    background-image: url("/media/fondo.jpg");    
+}
+
 /* agregamos la tipografia */
 *{    
     font-family: 'Roboto', sans-serif;
 }
 /* fin tipografia */
+
+
