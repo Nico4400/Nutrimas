@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-h2 {
-  color: red;
-} /* agregamos la tipografia */
+body {
+  background-image: url("/media/fondo.jpg");
+}
+
+/* agregamos la tipografia */
 * {
-  /* padding: 0;
-  margin: 0; */
   font-family: "Roboto", sans-serif;
 }
 
 /* fin tipografia */
 /* inicio de nav  */
 header {
-  height: 14vh;
+  height: 18vh;
+}
+header nav {
+  background: rgb(87, 171, 206);
+  background: linear-gradient(90deg, rgba(87, 171, 206, 0.544030112) 0%, rgba(50, 50, 50, 0.9726015406) 56%, rgb(50, 50, 50) 100%);
 }
 header ul {
   padding: 0;
@@ -20,14 +24,28 @@ header ul {
   justify-content: space-around;
   align-items: center;
 }
+header .nav-link, header .active {
+  color: #E59F3D;
+}
 header img {
   height: 14vh;
   width: 14vh;
   border-radius: 100%;
   align-items: center;
+  border: #E59F3D solid 1.5px;
+}
+header .navbar-toggler {
+  border: #E59F3D solid 2px;
+}
+header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 159, 61)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header .btn-close {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath stroke='rgba(229, 159, 61)' d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 }
 
 /* fin de nav */
+/* iconos carousel*/
 .icono {
   background-color: rgba(29, 7, 7, 0.6);
   padding: 15%;
@@ -39,13 +57,6 @@ header img {
   transition: 0.4s;
 }
 
-/* inicio carrusel */
-/* .carousel-inner {
-    height: 70vh;
-    width: 85%;    
-    margin: auto;
-    } */
-/* fin carrusel */
 /* inicio de quienes somos */
 .somos {
   padding: 2% 0 2% 0;
@@ -137,9 +148,9 @@ header img {
   text-align: justify;
 }
 .et_productos img {
-  border-color: white;
   border-style: solid;
   border-radius: 100%;
+  border: #E59F3D solid 2px;
 }
 .et_productos__img {
   display: flex;
@@ -147,11 +158,44 @@ header img {
   align-items: center;
 }
 .et_productos__link {
-  width: 70%;
+  width: 100%;
   text-align: center;
 }
-
-/* fin de productos */
+.et_productos__link .row {
+  margin: 5%;
+}
+.et_productos__link .btncane {
+  background: rgb(46, 92, 111);
+  background: linear-gradient(90deg, rgb(46, 92, 111) 72%, rgb(82, 127, 142) 100%);
+  border: #E59F3D solid 1.5px;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 1%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.et_productos__link .btncane:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.et_productos__link .btncane a {
+  color: #E59F3D;
+  text-decoration: none;
+}
+.et_productos__link .btnfeli {
+  background: rgb(121, 52, 129);
+  background: linear-gradient(90deg, rgb(121, 52, 129) 86%, rgb(153, 68, 132) 97%);
+  border: #E59F3D solid 1.5px;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 1%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.et_productos__link .btnfeli:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.et_productos__link .btnfeli a {
+  color: #E59F3D;
+  text-decoration: none;
+} /* fin de productos */
 /* inicio de ingredientes */
 .row--ingrediente {
   padding: 1%;
@@ -324,13 +368,14 @@ header img {
 /* fin de envios */
 /* inicio foter */
 .fondo {
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.8);
   list-style: none;
 }
 .fondo img {
   height: 15vh;
   width: 15vh;
   border-radius: 100%;
+  border: #E59F3D solid 2px;
 }
 .fondo li {
   list-style: none;

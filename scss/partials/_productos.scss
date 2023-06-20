@@ -10,10 +10,10 @@
         text-align: justify;
     }
 
-    img{    
-        border-color: white;
+    img{  
         border-style: solid;
-        border-radius: 100%;      
+        border-radius: 100%;
+        border: #E59F3D solid 2px;      
     }
 
     &__img{    
@@ -23,8 +23,17 @@
     }
 
     &__link{
-        width: 70%;    
-        text-align: center;
+        width: 100%;    
+        text-align: center;        
+        .row{
+            margin: 5%;                   
+        }
+        .btncane{
+            @include btncane;
+        }
+        .btnfeli{
+            @include btnfeli;
+        }
     }
 }
 /* fin de productos */

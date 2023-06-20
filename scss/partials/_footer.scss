@@ -1,12 +1,13 @@
 /* inicio foter */
 .fondo{
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.8);
     list-style: none;
 
     img{
         height: 15vh;
         width: 15vh;
         border-radius:100%;
+        border: $dorado solid 2px;
     }
     li{
         list-style: none;  

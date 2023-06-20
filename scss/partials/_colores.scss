@@ -1,3 +1,47 @@
-h2{
-    color: red;
+@mixin colornav{
+    background: rgb(87,171,206);
+    background: linear-gradient(90deg, rgba(87,171,206,0.5440301120448179) 0%, rgba(50,50,50,0.9726015406162465) 56%, rgba(50,50,50,1) 100%);
+}
+
+@mixin btncane{
+    background: rgb(46,92,111);
+    background: linear-gradient(90deg, rgba(46,92,111,1) 72%, rgba(82,127,142,1) 100%);
+    border: #E59F3D solid 1.5px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    &:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    a{        
+        color: #E59F3D;
+        text-decoration: none;
+    }
+}
+
+@mixin btnfeli{
+    background: rgb(121,52,129);
+    background: linear-gradient(90deg, rgba(121,52,129,1) 86%, rgba(153,68,132,1) 97%);
+    border: #E59F3D solid 1.5px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    &:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    a{        
+        color: #E59F3D;
+        text-decoration: none;
+    }
+}
+
+$dorado: #E59F3D;
+
+body{
+    background-image: url("/media/fondo.jpg");
+    
 }
