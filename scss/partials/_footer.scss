@@ -1,7 +1,12 @@
 /* inicio foter */
 .fondo{
-    background-color: rgba(0, 255, 255, 0.8);
+    // background-color: rgba(0, 255, 255, 0.8);
+    background: rgb(87,171,206);
+    background: linear-gradient(90deg, rgba(87,171,206,0.95) 0%, rgba(50,50,50,0.95) 56%, rgba(50, 50, 50, 0.95) 100%);
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vh;
 
     img{
         height: 15vh;
@@ -9,13 +14,46 @@
         border-radius:100%;
         border: $dorado solid 2px;
     }
-    li{
-        list-style: none;  
+    ul{
+        font-weight: bold;
+        padding: 0;
+        text-align: center;
+        color: white;  
+        font-size: large;
+    }
+    
+    li, p{
+        
+        list-style: none;
+        font-weight: normal;
+        text-shadow: none;
+        font-size:medium;
+        color: $dorado;       
+
+        a{
+            text-decoration: none;
+            color: $dorado;
+        }   
+    }
+    p{
+        margin: 0;
     }
     &__img{
         display: flex;
         justify-content: center;
         align-items: center;
-    }    
+        margin-bottom: 1vh;        
+    } 
+    input{
+        border: $dorado solid 1.5px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+    } 
+    
+    .face, .insta{
+        font-size: xx-large;
+        color: $dorado;
+    }
 }
 /* fin footer */
+

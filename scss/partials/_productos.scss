@@ -2,12 +2,18 @@
 .et_productos{    
     width: 90%;
     margin: auto;
-    padding: 5% 0 0 0;
+    margin-top: 2%;
+    padding: 3% 0 0 0;
     align-items: center;
-    
+    border: #E59F3D solid 2px;
+    border-radius: 16px;
+    background-color: rgb($lazulli, 0.45);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.34), 0 17px 50px 0 rgba($dorado,0.19);
+        
     p{
         text-indent: 5%;
         text-align: justify;
+        backdrop-filter: blur(2px);
     }
 
     img{  
@@ -54,16 +60,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        border: $dorado solid 1px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition: 0.3s;
+        
         &:hover{
-            background-color: rgba(0, 0, 0, 0.4);   
-        }
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 12px 16px 0 rgba($dorado,0.24), 0 17px 50px 0 rgba($dorado,0.19);
+            transform: scale(1.04);
+            transition: 0.4s;
+            overflow: hidden;                     
+        }        
     }
 
     h5{
         background-color: rgba(0, 0, 0, 0.4);
         padding: 1%;
-        border-radius: 10%;
+        border-radius: 10px;
     }
 }
 @media (max-width: 768px) {
@@ -83,19 +96,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 3%;
     margin-bottom: 0%;
     
     div{
         display: flex;
         justify-content: center;
         align-items: start;
+        border: $dorado solid 1px;
+        box-shadow: 0 12px 16px 0 rgba($dorado,0.24), 0 17px 50px 0 rgba($dorado,0.19);
+        
     }
 
     h5{
         background-color: rgba(0, 0, 0, 0.4);
         padding: 1%;
-        border-radius: 10%;
+        border-radius: 8px;
     }
 }
 /* fin de receta */
@@ -103,9 +119,20 @@
 /* inicio de preparacion */
 .preparacion--titulo, .receta--titulo, .ingrediente--titulo{
     margin: 0;
-    padding: 2% 0 2% 5%;
+    padding: 5% 0 0 0;
     display: flex;
-    justify-content: flex-start;
+    text-align: center;
+    justify-content: center;
     align-items: center;
+}
+
+.prep-img{
+
+    img{
+    margin-top: 5%;
+    border: $dorado solid 2px;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
 }
 /* fin de preparacion */

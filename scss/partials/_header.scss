@@ -4,6 +4,16 @@ header{
 
     nav{
         @include colornav;
+
+        .show{
+            background: rgb(87,171,206);
+            background: linear-gradient(90deg, rgba(87,171,206,0.65) 0%, rgba(50,50,50,0.8) 56%, rgba(50, 50, 50, 0.85) 100%);
+        }
+        .dropdown-item:hover{
+            background: rgb(87,171,206);
+            background: linear-gradient(90deg, rgba(87,171,206,0.65) 0%, rgba(50,50,50,0.8) 56%, rgba(50, 50, 50, 0.85) 100%);
+            color: $dorado;
+        }
     }
 
     ul{
@@ -14,7 +24,7 @@ header{
         align-items: center;         
     }
 
-    .nav-link, .active{
+    .nav-link, .active, .dropdown-item{
         color: $dorado;
     }
 
@@ -27,10 +37,12 @@ header{
     }
     .navbar-toggler{
         border: $dorado solid 2px;
+
+        &-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 159, 61)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
     }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229, 159, 61)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
+   
    .btn-close{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath stroke='rgba(229, 159, 61)' d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");    
     }
@@ -48,4 +60,3 @@ header{
         transition: 0.4s;      
     }
 }
-
