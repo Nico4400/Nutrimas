@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* fondo de pantalla */
 body {
-  background-image: url("../../media/fondo4.jpg");
+  background-image: url("../media/fondo4.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: 75vh;
@@ -369,7 +369,7 @@ header .btn-close {
   height: 100%;
 }
 .ubicacion__contacto {
-  background-image: url("../../media/forma1.jpg");
+  background-image: url("../media/forma1.jpg");
   background-position: center;
   opacity: 0.85;
   border-radius: 0px 20px 20px 0px;
